@@ -29,6 +29,7 @@ git clone https://github.com/karianjahi/deep-flattening-tool.git
 cd deep-flattening-tool
 ```
 2. Run the example
+
 Make sure you have `Node.js` installed, then:
 ```bash
 node source.js
