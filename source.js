@@ -19,3 +19,9 @@ User Stories:
 4. The solution should not use the `Array.prototype.flat()` or `Array.prototype.flatMap() `methods.
 5. Global variables should not be used.
 */
+const steamrollArray = (array) => {
+
+  
+};
+
+const my_array = [[3, 5, 6]]
