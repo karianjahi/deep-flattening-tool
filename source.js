@@ -35,5 +35,5 @@ const steamrollArray = (array) => {
   return result;
 };
 
-const array = [[3, 5, 6], [7, 2], 8, 9, [17, 18]];
+const array = [[3, 5, 6], [7, 2], 8, 9, [17, 18], [[[[[[[23, 14], [28, 88]], [2, 5]]]]]]];
 console.log(steamrollArray(array));
