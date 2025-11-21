@@ -36,4 +36,6 @@ const steamrollArray = (array) => {
 };
 
 const array = [[3, 5, 6], [7, 2], 8, 9, [17, 18], [[[[[[[23, 14], [28, 88]], [2, 5]]]]]]];
-console.log(steamrollArray(array));
+let my = [1, {"foo": "bar"}, [2]]
+my = ["baz", [1, 2], {}]
+console.log(steamrollArray(my));
