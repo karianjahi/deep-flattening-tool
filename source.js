@@ -20,8 +20,20 @@ User Stories:
 5. Global variables should not be used.
 */
 const steamrollArray = (array) => {
-
-  
+  let queue = [...array]; // copy array without mutating
+  let result = [];
+  let i = 5;
+  while (queue.length !== 0) { // keeping looping as far as queue has items inside
+    console.log(queue)
+    let item = queue.shift();
+    if (Array.isArray(item)) {
+      for (let anElement of item.reverse()) queue.unshift(anElement); // append each item of list to the beginning. Reverse the list first before so that the elements can maintain their order
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
 };
 
-const my_array = [[3, 5, 6]]
+const array = [[3, 5, 6], [7, 2], 8, 9, [17, 18]];
+console.log(steamrollArray(array));
