@@ -24,7 +24,7 @@ const steamrollArray = (array) => {
   let result = [];
   let i = 5;
   while (queue.length !== 0) { // keeping looping as far as queue has items inside
-    console.log(queue)
+    //console.log(queue)
     let item = queue.shift();
     if (Array.isArray(item)) {
       for (let anElement of item.reverse()) queue.unshift(anElement); // append each item of list to the beginning. Reverse the list first before so that the elements can maintain their order
