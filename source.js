@@ -22,7 +22,6 @@ User Stories:
 const steamrollArray = (array) => {
   let queue = [...array]; // copy array without mutating
   let result = [];
-  let i = 5;
   while (queue.length !== 0) { // keeping looping as far as queue has items inside
     //console.log(queue)
     let item = queue.shift();
